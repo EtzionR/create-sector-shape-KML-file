@@ -22,7 +22,7 @@ As part of this conversion, the code also perform a calculation of the **utm zon
 
 As part of the calculation, the code calculated mathematically the position of the points composed the **arc** of the sector. The direction of the sector converted from degrees to **radians**, and using with the length to calculated the points that composed the arc. Every point calculated relatively the origin coordinates. It is important to note that the angles on which the calculation is made, assume that an angle of 0 degrees is oriented to the north, as can be seen in the figure:
 
-![compass](https://github.com/EtzionData/create-sector-shape-KML-file/blob/master/Pictures/compass.png | width=100)
+![compass](https://github.com/EtzionData/create-sector-shape-KML-file/blob/master/Pictures/compass.png)
 
 All the points that composed the sector shape are saved as a list of X and Y coordinates. This data is entered into the original dataframe as **"POLYGON"** field. Using this field, the code will create the new **KML layer** using the **simplekml** library.
 
@@ -31,3 +31,44 @@ An example of one of the KML layers created using the code can be seen in the **
 ![NYH](https://github.com/EtzionData/create-sector-shape-KML-file/blob/master/Pictures/example.PNG)
 
 All the layers created in the examples of this project uploaded to this **MyMaps** link: [sector_maps](https://www.google.com/maps/d/edit?mid=1YCqE5DIWiGnS8djtyFZ2UNDHQ55gPOve&usp=sharing)
+
+## libraries
+The code uses the following libraries in Python:
+
+**utm**
+
+**numpy**
+
+**simplekml**
+
+**pandas**
+
+
+## application
+An application of the code is attached to this page under the name: 
+
+**"implementation.py"** 
+the examples outputs are also attached here.
+
+## example for using the code
+To use this code, you just need to import it as follows:
+``` sh
+# import
+from wiki_crawler import wikipedia_network
+
+# define variables
+url = r'https://en.wikipedia.org/wiki/something'  # original page
+depth = 2	                                        # search distance from the original page
+plot = True	                                      # bool (default: False)
+
+# application
+wikipedia_network(url, depth, plot)
+```
+
+When the variables displayed are:
+
+**url:** url string of the base Wikipedia page
+
+**bin:** search distance to pages, from the original page
+
+**name:** string which represents the filename of the plot you want to save
