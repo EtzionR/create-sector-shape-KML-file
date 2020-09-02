@@ -28,7 +28,7 @@ All the points that composed the sector shape are saved as a list of X and Y coo
 
 An example of one of the KML layers created using the code can be seen in the **New York Harbor** area:
 
-![NYH](https://github.com/EtzionData/create-sector-shape-KML-file/blob/master/Pictures/example.PNG)
+![NYH](https://github.com/EtzionData/create-sector-shape-KML-file/blob/master/Pictures/example.jpg)
 
 All the layers created in the examples of this project uploaded to this **MyMaps** link: [sector_maps](https://www.google.com/maps/d/edit?mid=1YCqE5DIWiGnS8djtyFZ2UNDHQ55gPOve&usp=sharing)
 
