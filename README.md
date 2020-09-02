@@ -54,21 +54,38 @@ the examples outputs are also attached here.
 To use this code, you just need to import it as follows:
 ``` sh
 # import
-from wiki_crawler import wikipedia_network
+from sector_creator import create_sector_kml
+import pandas as pd
 
 # define variables
-url = r'https://en.wikipedia.org/wiki/something'  # original page
-depth = 2	                                        # search distance from the original page
-plot = True	                                      # bool (default: False)
+data = pd.read_csv(r'path\file.csv')
+name = 'name'
+x_field = 'x'
+y_field = 'y'
+angle = 'angle'
+distance = 'distance'
+std = 'sd'
 
 # application
-wikipedia_network(url, depth, plot)
+create_sector_kml(data,x_field,y_field,angle,distance,std,name='name', points=50,output='POLYGONS_FILE')
 ```
 
 When the variables displayed are:
 
-**url:** url string of the base Wikipedia page
+**data:** the given pandas dataframe
 
-**bin:** search distance to pages, from the original page
+**x_field:** x coordiantes field name
 
-**name:** string which represents the filename of the plot you want to save
+**y_field:** y coordiantes field name
+
+**angle:** sector main angle field name
+
+**distance:** distance of the the arc from the origin point field name
+
+**std:** sector angle size field name
+
+**points:** the arc resolution (default: 36)
+
+**name:** row name field name (default: None)
+
+**output:** name of the output kml file (default: 'OUTPUT_POLYGONS')
