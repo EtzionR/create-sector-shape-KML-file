@@ -20,12 +20,14 @@ the code convert them back to **wgs84 geo dd** format, so that it allow to save 
 
 As part of this conversion, the code also perform a calculation of the **utm zone**, And we will check whether the coordinates are located in the northern (**"U"**) or southern (**"D"**) part of the Earth. This information will be used by the code in converting the data back to wgs84 geo dd format.
 
-As part of the calculation, the code calculated mathematically the position of the points composed the **arc** of the sector. The direction of the sector is converted from degrees to **radians**, and using the length figure the position of each point relative to the point of origin is calculated.
-It is important to note that the angles on which the calculation is made assume that an angle of 0 degrees is oriented to the north, as can be seen in the figure:
+As part of the calculation, the code calculated mathematically the position of the points composed the **arc** of the sector. The direction of the sector converted from degrees to **radians**, and using with the length to calculated the points that composed the arc. Every point calculated relatively the origin coordinates. It is important to note that the angles on which the calculation is made, assume that an angle of 0 degrees is oriented to the north, as can be seen in the figure:
 
-All the points that make up the sector shape are saved as a list of X and Y coordinates. This data is entered into the field in the resulting dataframe.
-Using this field, we will create the new KML layer using the simplekml library.
+![compass](https://github.com/EtzionData/create-sector-shape-KML-file/blob/master/Pictures/compass.png)
 
-An example of one of the KML layers created using the code can be seen in the New York Harbor area:
+All the points that composed the sector shape are saved as a list of X and Y coordinates. This data is entered into the original dataframe as **"POLYGON"** field. Using this field, the code will create the new **KML layer** using the **simplekml** library.
+
+An example of one of the KML layers created using the code can be seen in the **New York Harbor** area:
+
+![NYH](https://github.com/EtzionData/create-sector-shape-KML-file/blob/master/Pictures/example.PNG)
 
 All the layers created in the examples of this project uploaded to this **MyMaps** link: [sector_maps](https://www.google.com/maps/d/edit?mid=1YCqE5DIWiGnS8djtyFZ2UNDHQ55gPOve&usp=sharing)
