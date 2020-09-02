@@ -28,4 +28,4 @@ Using this field, we will create the new KML layer using the simplekml library.
 
 An example of one of the KML layers created using the code can be seen in the New York Harbor area:
 
-All the layers created in the examples of this project are shown in this link:
+All the layers created in the examples of this project uploaded to this **MyMaps** link: [sector_maps](https://www.google.com/maps/d/edit?mid=1YCqE5DIWiGnS8djtyFZ2UNDHQ55gPOve&usp=sharing)
