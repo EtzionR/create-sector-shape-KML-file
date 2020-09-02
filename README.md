@@ -24,7 +24,7 @@ As part of the calculation, the code calculated mathematically the position of t
 
 ![compass](https://github.com/EtzionData/create-sector-shape-KML-file/blob/master/Pictures/compass.png)
 
-All the points that composed the sector shape are saved as a list of X and Y coordinates. This data is entered into the original dataframe as **"POLYGON"** field. Using this field, the code will create the new **KML layer** using the ![**simplekml**](https://simplekml.readthedocs.io/en/latest/#) library.
+All the points that composed the sector shape are saved as a list of X and Y coordinates. This data is entered into the original dataframe as **"POLYGON"** field. Using this field, the code will create the new **KML layer** using the [**simplekml**](https://simplekml.readthedocs.io/en/latest/#) library.
 
 An example of one of the KML layers created using the code can be seen in the **New York Harbor** area:
 
