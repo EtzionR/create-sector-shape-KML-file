@@ -22,7 +22,7 @@ As part of this conversion, the code also perform a calculation of the **utm zon
 
 As part of the calculation, the code calculated mathematically the position of the points composed the **arc** of the sector. The direction of the sector converted from degrees to **radians**, and using with the length to calculated the points that composed the arc. Every point calculated relatively the origin coordinates. It is important to note that the angles on which the calculation is made, assume that an angle of 0 degrees is oriented to the north, as can be seen in the figure:
 
-![compass](https://github.com/EtzionData/create-sector-shape-KML-file/blob/master/Pictures/compass.png)
+![compass](https://github.com/EtzionData/create-sector-shape-KML-file/blob/master/Pictures/compass.png=250x250)
 
 All the points that composed the sector shape are saved as a list of X and Y coordinates. This data is entered into the original dataframe as **"POLYGON"** field. Using this field, the code will create the new **KML layer** using the **simplekml** library.
 
