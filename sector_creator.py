@@ -87,7 +87,7 @@ def create_kml(data,output,names):
 def create_sector_kml(data,x_field,y_field,angle,distance,std,points=36,name=None,output='OUTPUT_POLYGONS'):
     """
     create sector kml layer from the given dataframe
-    :param data: the given pands dataframe
+    :param data: the given pandas dataframe
     :param x_field: x coordiantes field name
     :param y_field: y coordiantes field name
     :param angle: sector main angle field name
