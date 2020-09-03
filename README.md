@@ -15,7 +15,7 @@ Using this data you can calculate the sector shape, according to the following f
 
 Also, another parameter defined by default in the code is the **arc-resolution** of the sector (points parameter).The default value of this variable is **points=36**.
 
-In order to perform the calculation, we must first perform the conversion of the coordinates to the **UTM** format. This format will allow to calculated the sector by precise meters terms (calculation that base on degrees, will result getting an inaccurate shape). Also, after calculating the points that composed the sector,
+In order to perform the calculation, we must first perform the conversion of the coordinates to the **UTM** format. This format will allow to calculated the sector by precise meters terms. Also, after calculating the points that composed the sector,
 the code convert them back to **wgs84 geo dd** format, so that it allow to save them later as a **KML file**.
 
 As part of this conversion, the code also perform a calculation of the **utm zone**, And we will check whether the coordinates are located in the northern (**"U"**) or southern (**"D"**) part of the Earth. This information will be used by the code in converting the data back to wgs84 geo dd format.
