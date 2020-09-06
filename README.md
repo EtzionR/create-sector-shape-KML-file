@@ -30,7 +30,7 @@ An example of one of the KML layers created using the code can be seen in the **
 
 ![NYH](https://github.com/EtzionData/create-sector-shape-KML-file/blob/master/Pictures/example.jpg)
 
-All the layers created in the examples of this project uploaded to this **MyMaps** link: [sector_maps](https://www.google.com/maps/d/edit?mid=1YCqE5DIWiGnS8djtyFZ2UNDHQ55gPOve&usp=sharing)
+All the layers created in the examples of this project uploaded to this **MyMaps** link: [**sector_maps**](https://www.google.com/maps/d/edit?mid=1YCqE5DIWiGnS8djtyFZ2UNDHQ55gPOve&usp=sharing)
 
 ## libraries
 The code uses the following libraries in Python:
