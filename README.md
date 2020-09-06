@@ -43,11 +43,6 @@ The code uses the following libraries in Python:
 
 **pandas**
 
-
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1YCqE5DIWiGnS8djtyFZ2UNDHQ55gPOve" width="640" height="480"></iframe>
-
-
-
 ## application
 An application of the code is attached to this page under the name: 
 
