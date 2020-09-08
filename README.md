@@ -1,5 +1,5 @@
 # create-sector-shape-KML-file
-Create sector shape KML layer from given pandas dataframe
+Create sector shape KML layer from given pandas dataframe.
 
 ## introduction
 Creating polygons with complex geometries is not a simple while working with KML format. Therefore, in order to create the shape of the sector, we must use the mathematical parameters that will allow us to calculate the shape.
