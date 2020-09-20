@@ -18,7 +18,7 @@ Also, another parameter defined by default in the code is the **arc-resolution**
 In order to perform the calculation, we must first perform the conversion of the coordinates to the **UTM** format. This format will allow to calculated the sector by precise meters terms. Also, after calculating the points that composed the sector,
 the code convert them back to **wgs84 geo dd** format, so that it allow to save them later as a **KML file**.
 
-As part of this conversion, the code also perform a calculation of the **utm zone**, And we will check whether the coordinates are located in the northern (**"U"**) or southern (**"D"**) part of the Earth. This information will be used by the code in converting the data back to wgs84 geo dd format.
+As part of this conversion, the code also perform automatic calculation of the **utm zone**, And we will check whether the coordinates are located in the northern (**"U"**) or southern (**"D"**) part of the Earth. This information will be used by the code in converting the data back to wgs84 geo dd format.
 
 As part of the calculation, the code calculated mathematically the position of the points composed the **arc** of the sector. The direction of the sector converted from degrees to **radians**, and using with the length to calculated the points that composed the arc. Every point calculated relatively the origin coordinates. It is important to note that the angles on which the calculation is made, assume that an angle of 0 degrees is oriented to the north, as can be seen in the figure:
 
