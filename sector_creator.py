@@ -80,7 +80,7 @@ def create_kml(data,output,names):
     poly = data['POLYGON']
     file = Kml()
     for p in range(len(poly)):
-        single = file.newpolygon(name=names[p],outerboundaryis=poly[p])
+        single = file.newpolygon(name=str(names[p]),outerboundaryis=poly[p])
         single.style.polystyle.color = '99ff5500'
     file.save(output+'.kml')
 
