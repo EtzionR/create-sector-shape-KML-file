@@ -90,5 +90,5 @@ When the variables displayed are:
 **output:** name of the output kml file (default: 'OUTPUT_POLYGONS')
 
 
-# License
+## License
 MIT © [Etzion Harari](https://github.com/EtzionData)
