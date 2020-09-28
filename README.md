@@ -88,3 +88,7 @@ When the variables displayed are:
 **name:** row name field name (default: None)
 
 **output:** name of the output kml file (default: 'OUTPUT_POLYGONS')
+
+
+# License
+MIT © [Etzion Harari](https://github.com/EtzionData)
