@@ -84,7 +84,7 @@ def create_kml(data,output,names):
         single.style.polystyle.color = '99ff5500'
     file.save(output+'.kml')
 
-def create_sector_kml(data,x_field,y_field,angle,distance,std,points=36,name=None,output='OUTPUT_POLYGONS'):
+def create_sector_kml(data,x_field,y_field,angle,distance,std,points=36,name=None,output=None):
     """
     create sector kml layer from the given dataframe
     :param data: the given pandas dataframe
@@ -99,12 +99,4 @@ def create_sector_kml(data,x_field,y_field,angle,distance,std,points=36,name=Non
     """
     data_preparation(data, x_field, y_field)
     arc_calculator(data, distance, angle, std, points)
-    create_kml(data, output, name)
-
-
-
-
-
-
-
-
+    if output!=None: create_kml(data, output, name)
