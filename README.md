@@ -1,7 +1,7 @@
-# create-sector-shape-KML-file
+# Create-sector-shape-KML-file
 Create sector shape KML layer from given pandas dataframe.
 
-## introduction
+## Introduction
 Creating polygons with complex geometries is not a simple while working with KML format. Therefore, in order to create the shape of the sector, we must use the mathematical parameters that will allow us to calculate the shape.
 
 Therefore, the input dataframe must include the following parameters:
@@ -32,7 +32,7 @@ An example of one of the KML layers created using the code can be seen in the **
 
 All the layers created in the examples of this project uploaded to this **MyMaps** link: [**sector_maps**](https://www.google.com/maps/d/edit?mid=1YCqE5DIWiGnS8djtyFZ2UNDHQ55gPOve&usp=sharing)
 
-## libraries
+## Libraries
 The code uses the following libraries in Python:
 
 **utm**
@@ -43,14 +43,14 @@ The code uses the following libraries in Python:
 
 **pandas**
 
-## application
+## Application
 An application of the code is attached to this page under the name: 
 
 [**"implementation.py"**](https://github.com/EtzionData/create-sector-shape-KML-file/blob/master/implementation.py)
 
 the examples outputs are also attached here.
 
-## example for using the code
+## Example for using the code
 To use this code, you just need to import it as follows:
 ``` sh
 # import
