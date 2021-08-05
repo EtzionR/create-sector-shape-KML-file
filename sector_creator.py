@@ -1,3 +1,7 @@
+# Create by Etzion Harari
+# https://github.com/EtzionR
+
+# Load libraries:
 from utm import from_latlon as to_utm, to_latlon as to_geo
 from numpy import cos, sin, pi
 from simplekml import Kml
@@ -100,3 +104,5 @@ def create_sector_kml(data,x_field,y_field,angle,distance,std,points=36,name=Non
     data_preparation(data, x_field, y_field)
     arc_calculator(data, distance, angle, std, points)
     if output!=None: create_kml(data, output, name)
+
+# MIT © Etzion Harari
