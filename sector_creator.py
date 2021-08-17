@@ -105,4 +105,6 @@ def create_sector_kml(data,x_field,y_field,angle,distance,std,points=36,name=Non
     arc_calculator(data, distance, angle, std, points)
     if output!=None: create_kml(data, output, name)
 
+
+# License
 # MIT © Etzion Harari
